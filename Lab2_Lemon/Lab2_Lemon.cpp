@@ -12,11 +12,17 @@ int main()
 	cout << "Hello, my name is Grace and I'm going to solve the equation:\n";
 	cout << "Ax + B = 0\n";
 	cout << "For x\n";
+	cout << endl;
 
-	cout << "Please enter a value for A:\n";
+	cout << "Please enter a value for A: ";
 	cin >> A;
-	cout << "A = " + A + "\n";
-	cout << "A=" << A << endl;
-	B = (A * 4) + 1;
-	cout << "And B=" << B << endl;
+	cout << "Please enter a value for B: ";
+	cin >> B;
+	cout << endl;
+	cout << "Solving " << A << "x+" << B << "=0 for x...\n\n";
+	
+	X = -B / A;
+
+	cout << "The answer is : \nx=" << X << endl;
+
 }
